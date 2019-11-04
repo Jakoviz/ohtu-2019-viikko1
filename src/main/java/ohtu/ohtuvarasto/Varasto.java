@@ -34,6 +34,10 @@ public class Varasto {
         }
     }
 
+	Varasto() {
+		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+	}
+
     // --- ottavat aksessorit eli getterit: ---
     public double getSaldo() {
         return saldo;
