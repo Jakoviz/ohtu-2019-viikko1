@@ -17,7 +17,8 @@ public class Varasto {
         saldo = 0;     // oletus: varasto on tyhjä
     }
 
-    public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
+    public Varasto(double tilavuus, double alkuSaldo)
+    { // kuormitetaan
         if (tilavuus > 0.0) {
             this.tilavuus = tilavuus;
         } else // virheellinen, nollataan
@@ -30,18 +31,10 @@ public class Varasto {
         } else {
             saldo = 0;
         }
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
-        ;
     }
 
-    public Varasto() {
+    public Varasto() 
+    {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -3,7 +3,11 @@
 <module name="Checker">
     <property name="severity" value="warning"/>
     <module name="TreeWalker">
-	<module name="NestedIfDepth">
+	<module name="MethodLength">
+  		<property name="tokens" value="METHOD_DEF"/>
+  		<property name="max" value="15"/>
+	</module>
+        <module name="NestedIfDepth">
 		<property name="max" value="1"/>
 	</module>
 	<module name="NestedForDepth">
