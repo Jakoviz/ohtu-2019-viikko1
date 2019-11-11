@@ -22,4 +22,6 @@
 	</module>
     </module>
 
+    <property name="severity" value="warning"/>
+
 </module>
