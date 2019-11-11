@@ -24,19 +24,17 @@ public class Varasto {
         {
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
         }
-        if (alkuSaldo < 0.0) {
-            this.saldo = 0.0;
-        } else if (alkuSaldo <= tilavuus) // mahtuu
-        {
-            this.saldo = alkuSaldo;
+        double min = Math.min(alkuSaldo, tilavuus);
+        if (min > 0.0) {
+            saldo = min; 
         } else {
-            this.saldo = tilavuus;  // täyteen ja ylimäärä hukkaan!
+            saldo = 0;
         }
     }
 
-	Varasto() {
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-	}
+    public Varasto() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     // --- ottavat aksessorit eli getterit: ---
     public double getSaldo() {
